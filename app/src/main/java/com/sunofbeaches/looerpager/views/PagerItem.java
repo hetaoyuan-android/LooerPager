@@ -3,7 +3,7 @@ package com.sunofbeaches.looerpager.views;
 public class PagerItem {
     private String title;
 
-    private String picResId;
+    private int picResId;
 
     public String getTitle() {
         return title;
@@ -13,15 +13,15 @@ public class PagerItem {
         this.title = title;
     }
 
-    public String getPicResId() {
+    public int getPicResId() {
         return picResId;
     }
 
-    public void setPicResId(String picResId) {
+    public void setPicResId(int picResId) {
         this.picResId = picResId;
     }
 
-    public PagerItem(String title,String picResId) {
+    public PagerItem(String title,int picResId) {
         this.title = title;
         this.picResId = picResId;
     }

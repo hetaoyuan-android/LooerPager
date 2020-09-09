@@ -15,13 +15,4 @@
         sob:show_pager_count="multi"
         sob:switch_time="4000" />
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_below="@id/sob_looper_pager"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
-        android:scaleType="fitXY"
-        android:background="@color/colorAccent"
-        android:layout_height="200dp"/>
-
 </RelativeLayout>

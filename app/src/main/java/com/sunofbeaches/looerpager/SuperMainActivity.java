@@ -21,18 +21,15 @@ public class SuperMainActivity extends AppCompatActivity {
     private SobLooperPager mLooperPager;
 
     private List<PagerItem> mData = new ArrayList<>();
-    private ImageView imageView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suer_main);
-        imageView = findViewById(R.id.image);
         initData();
         initView();
         initEvent();
         String url = "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg";
-        Glide.with(this).load(url).into(imageView);
     }
 
     private void initEvent() {
@@ -48,14 +45,14 @@ public class SuperMainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-//        mData.add(new PagerItem("第一个图片",R.mipmap.pic0));
-//        mData.add(new PagerItem("第2个图片",R.mipmap.pic1));
-//        mData.add(new PagerItem("第三个图片",R.mipmap.pic2));
-//        mData.add(new PagerItem("第4个图片",R.mipmap.pic3));
-        mData.add(new PagerItem("第一个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
-        mData.add(new PagerItem("第二个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
-        mData.add(new PagerItem("第三个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
-        mData.add(new PagerItem("第四个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
+        mData.add(new PagerItem("第一个图片",R.mipmap.pic0));
+        mData.add(new PagerItem("第2个图片",R.mipmap.pic1));
+        mData.add(new PagerItem("第三个图片",R.mipmap.pic2));
+        mData.add(new PagerItem("第4个图片",R.mipmap.pic3));
+//        mData.add(new PagerItem("第一个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
+//        mData.add(new PagerItem("第二个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
+//        mData.add(new PagerItem("第三个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
+//        mData.add(new PagerItem("第四个图片", "http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg"));
 
     }
 
